@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Calculator app</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header_div">
+      <h1 class="heading">calc</h1>
+      <p class="para">THEME</p>
+      <div class="numbers_screen">
+        <div class="sircle" id="switch_sircle"></div>
+        <div class="numbers_div">
+          <p id="one">1</p>
+          <p id="two">2</p>
+          <p id="three">3</p>
+        </div>
+        <input type="range" step="1" min="1" max="3" value="1" id="screen_id">
+      </div>
+    </div>
+    <div class="main_div">
+      <form name="cclr">
+      <input type="text" id="white_screen" name="text" readonly>
+      </form>
+      <div class="btns">
+        <button id="num_id" class="btn" onclick="document.cclr.text.value+='7'">7</button>
+        <button id="num_id" class="btn" onclick="document.cclr.text.value+='8'">8</button>
+        <button id="num_id" class="btn" onclick="document.cclr.text.value+='9'">9</button>
+        <button id="del_id" class="btn" onclick="del()">DEL</button>
+        <button id="num_id" class="btn" onclick="document.cclr.text.value+='4'">4</button>
+        <button id="num_id" class="btn" onclick="document.cclr.text.value+='5'">5</button>
+        <button id="num_id" class="btn" onclick="document.cclr.text.value+='6'">6</button>
+        <button id="plus_id" class="btn" onclick="document.cclr.text.value+='+'">+</button>
+        <button id="num_id" class="btn" onclick="document.cclr.text.value+='1'">1</button>
+        <button id="num_id" class="btn" onclick="document.cclr.text.value+='2'">2</button>
+        <button id="num_id" class="btn" onclick="document.cclr.text.value+='3'">3</button>
+        <button id="minus_id" class="btn" onclick="document.cclr.text.value+='-'">-</button>
+        <button id="dot_id" class="btn"  onclick="document.cclr.text.value+='.'">.</button>
+        <button id="num_id" class="btn" onclick="document.cclr.text.value+='0'">0</button>
+        <button id="slash" class="btn"  onclick="document.cclr.text.value+='/'">/</button>
+        <button id="x_id" class="btn"  onclick="document.cclr.text.value+='*'">X</button>
+        <button id="reset_id" class="reset click"  onclick="document.cclr.text.value=''">RESET</button>
+        <button id="equal_id" class="equal"  onclick="document.cclr.text.value = eval(cclr.text.value)">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>

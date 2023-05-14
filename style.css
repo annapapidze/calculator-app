@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+    /* mobile version */
+
+body {
+    background: #3A4663;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "League Spartan";
+    font-weight: 700;
+    overflow: hidden;
+    padding: 3.0rem 2.4rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+body.active1 {
+    background: #E6E6E6;
+}
+
+#white_screen.active1,
+.btns.active1,
+#screen_id.active1 {
+    color: #36362C;
+    background-color: #D2CDCD;
+}
+
+.heading.active1,
+.para.active1 {
+    color: #36362C;
+}
+
+.reset.active1 {
+    background-color: #378187;
+    box-shadow: 0px -4px 0px 0px #1B6066 inset;
+}
+
+.equal.active1 {
+    background-color: #C85402;
+    box-shadow: 0px -4px 0px 0px #873901 inset;
+}
+
+#white_screen.active2,
+.btns.active2,
+#screen_id.active2 {
+    color: #FFE53D;
+    background-color: #1E0936;
+}
+
+.heading.active2,
+.para.active2 {
+    color: #FFE53D;
+}
+
+.reset.active2 {
+    background-color: #56077C;
+    box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+}
+
+.equal.active2 {
+    background-color: #00DED0;
+    box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
+}
+
+body.active2 {
+    background: #17062A;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 37.5rem;
+    height: auto;
+}
+
+.header_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32rem;
+    height: 4.2rem;
+}
+
+.heading {
+    color: #ffffff;
+    font-size: 3.2rem;
+    line-height: 2.944rem;
+}
+
+.para {
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.1rem;
+    margin-top: 2.6rem;
+    margin-left: 11.4rem;
+}
+
+.numbers_screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 7.1rem;
+    height: 4.2rem;
+}
+
+.numbers_div {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.numbers_div p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+}
+
+.switch_btn {
+
+    border-radius: 1.3rem;
+    margin: 0.3rem;
+    width: 7.1rem;
+    height: 2.6rem;
+}
+
+#screen_id {
+    background-color: #242D44;
+    border-radius: 1.3rem;
+    -webkit-appearance: none;
+    outline: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 7.1rem;
+    height: 2.6rem;
+} 
+
+
+input#screen_id::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #D03F2F;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.main_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.2rem;
+    gap: 2.4rem;
+}
+
+#white_screen {
+    background-color: #181f33;
+    color: #ffffff;
+    text-align: right;
+    font-size: 4rem;
+    line-height: 3.6rem;
+    font-family: "League Spartan";
+    font-weight: 700;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    padding-right: 3.2rem;
+    width: 32.7rem;
+    height: 8.8rem;
+}
+
+.btns {
+    background: #242D44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    border-radius: 1rem;
+    gap: 1.3rem;
+    padding: 2.4rem;
+    width: 32.7rem;
+}
+
+.btn {
+    background-color: #EAE3DC;
+    box-shadow: 0px -4px 0px 0px #B3A497 inset;
+    font-family: "League Spartan";
+    color: #434A59;
+    font-size: 3.2rem;
+    line-height: 2.944rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    width: 6rem;
+    height: 6.4rem;
+}
+
+.click {
+    background-color: #647198;
+    box-shadow: 0px -4px 0px 0px #414E73 inset;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.844rem;
+    font-style: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.reset,
+.equal {
+    font-family: "League Spartan";
+    font-weight: 700;
+    font-style: bold;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    width: 13.3rem;
+    height: 6.4rem;
+}
+
+.equal {
+    background-color: #D03F2F;
+    box-shadow: 0px -4px 0px 0px #93261A inset;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.844rem;
+    cursor: pointer;
+}
+
+    /* desktop version */
+
+@media screen and (min-width: 1400px) {
+    .container,
+    .header_div,
+    .btns,
+    #white_screen {
+        width: 53rem;
+    }
+
+    .para {
+        margin-left: 28rem;
+    }
+
+    .btns {
+        gap: 2.5rem;
+    }
+
+    .btn {
+        width: 10.1rem;
+    }
+
+    .reset,
+    .equal {
+        width: 22.7rem;
+    }
+}
